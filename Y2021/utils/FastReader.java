@@ -10,7 +10,7 @@ public class FastReader {
     private BufferedReader br;
     private StringTokenizer st;
 
-    public FastReader(char filename) {
+    public FastReader(String filename) {
         try {
             br = new BufferedReader(
                     new FileReader(new File("D:\\Competitive Programming\\HashCode\\Y2021\\input\\"+filename+".txt")));

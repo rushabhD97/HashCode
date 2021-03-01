@@ -16,7 +16,21 @@ import Y2021.utils.FastReader;
 public class Main {
 
     public static void main(String[] args) {
+        if(args.length>2){
+            System.out.println("Expecting 2 or less arguments");
+            return;
+        }
         Main main = new Main();
+        if(args.length>0){
+            try {
+                PrintStream o = new PrintStream(new File("D:\\Competitive Programming\\HashCode\\Y2021\\output\\"+args[0]+".txt"));
+                System.setOut(o);
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+            main.run(args[args.length-1]);
+            return ;
+        }
         for(int i=0;i<6;i++){
             char filename=(char)('a'+i);
             try {
@@ -25,10 +39,10 @@ public class Main {
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
-            main.run(filename);
+            main.run(String.valueOf(filename));
         }
     }
-    void run(char filename){
+    void run(String filename){
         FastReader fr = new FastReader(filename);
         Integer D = fr.nextInt();
         Integer I = fr.nextInt();
