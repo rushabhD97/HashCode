@@ -11,6 +11,8 @@ Team Name: NoobTigers
 
 (*Need to get better at choosing names*)
 
+![Certificate](Y2021/images/Certificate.JPG)
+
 > Score: 8,936,684 points
 
 > Global Rank: #2621
@@ -18,6 +20,7 @@ Team Name: NoobTigers
 > India Rank:  #652
 
 [![Score](Y2021/images/3.JPG)](https://hashcodejudge.withgoogle.com/scoreboard)
+
 
 
 
